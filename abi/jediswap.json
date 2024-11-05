@@ -1,0 +1,140 @@
+[
+  {
+    "data": [
+      {
+        "name": "implementation",
+        "type": "felt"
+      }
+    ],
+    "keys": [],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "data": [
+      {
+        "name": "previousAdmin",
+        "type": "felt"
+      },
+      {
+        "name": "newAdmin",
+        "type": "felt"
+      }
+    ],
+    "keys": [],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "name": "constructor",
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "implementation_hash",
+        "type": "felt"
+      },
+      {
+        "name": "factory",
+        "type": "felt"
+      },
+      {
+        "name": "proxy_admin",
+        "type": "felt"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "__default__",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "selector",
+        "type": "felt"
+      },
+      {
+        "name": "calldata_size",
+        "type": "felt"
+      },
+      {
+        "name": "calldata",
+        "type": "felt*"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "retdata_size",
+        "type": "felt"
+      },
+      {
+        "name": "retdata",
+        "type": "felt*"
+      }
+    ]
+  },
+  {
+    "name": "__l1_default__",
+    "type": "l1_handler",
+    "inputs": [
+      {
+        "name": "selector",
+        "type": "felt"
+      },
+      {
+        "name": "calldata_size",
+        "type": "felt"
+      },
+      {
+        "name": "calldata",
+        "type": "felt*"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "upgrade",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "new_implementation",
+        "type": "felt"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "set_admin",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "new_admin",
+        "type": "felt"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "get_admin",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "admin",
+        "type": "felt"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "get_implementation_hash",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "implementation",
+        "type": "felt"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]
