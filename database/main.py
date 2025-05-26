@@ -6,13 +6,7 @@ import psycopg2
 from sqlalchemy import create_engine
 import pandas as pd
 from starknet_py.net.signer.stark_curve_signer import KeyPair
-
-pg_host = ""
-pg_user = ""
-pg_password = ''
-
-database = ""
-
+from config import pg_host, pg_user, pg_password, database
 
 async def main_database_create():
     pg_host_url = f'postgresql://{pg_user}:{pg_password}@{pg_host}:5432/{database}'

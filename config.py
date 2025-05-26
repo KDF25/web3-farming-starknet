@@ -13,3 +13,9 @@ OKX_KEYS = {
         'password': '',
     },
 }
+
+pg_host = ""
+pg_user = ""
+pg_password = ''
+
+database = ""
