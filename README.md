@@ -58,7 +58,7 @@ This project is an automated system for interacting with DeFi protocols on the S
 
 1. **Clone the repository:**
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/KDF25/web3-farming-starknet.git
    ```
 2. **Install dependencies:**
    ```bash
